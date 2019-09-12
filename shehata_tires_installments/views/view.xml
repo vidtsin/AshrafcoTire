@@ -1,0 +1,77 @@
+<odoo>
+    <data>
+
+
+        <record id="account_payment_term_line_form_inherit_shehata" model="ir.ui.view">
+            <field name="name">account_payment_term_line_form_inherit_shehata</field>
+            <field name="model">account.payment.term.line</field>
+            <field name="inherit_id" ref="account.view_payment_term_line_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//group"  position="replace">
+                       <group>
+                        <group>
+                            <field name="value" widget="radio"/>
+                        </group>
+
+                        <group>
+                            <div attrs="{'invisible':[('value','=', 'balance'),('value','=', 'installment')]}" class="o_row">
+                                <label for="value_amount" attrs="{'invisible':[('value','=', 'balance'),('value','=', 'installment')]}"/>
+                                <field name="value_amount" class="oe_inline" attrs="{'invisible':[('value','=', 'installment')],'readonly': [('value', 'in', ('balance'))]} "/>
+                                <span class="o_form_label oe_inline" attrs="{'invisible':[('value','!=','percent')]}">%</span>
+                            </div>
+                        </group>
+                    </group>
+                </xpath>
+
+                <xpath expr="//group/group/div[1]" position="before">
+
+
+                    <field name="no_months" attrs="{'invisible':[('value','!=', 'installment')]}" force_save="1"/>
+                    <field name="is_installment" invisible="1"/>
+
+                </xpath>
+            </field>
+        </record>
+
+
+
+        <record id="account_payment_term_line_form_inherit_shehata_tree" model="ir.ui.view">
+            <field name="name">account_payment_term_line_form_inherit_shehata_tree</field>
+            <field name="model">account.payment.term.line</field>
+            <field name="inherit_id" ref="account.view_payment_term_line_tree"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='day_of_the_month']"  position="after">
+
+
+                            <field name="no_months" string="Number Of Installments"/>
+
+
+
+                </xpath>
+
+            </field>
+        </record>
+
+
+
+
+<!--         <record id="account_payment_term_line_form_inherit_shehata_5RA" model="ir.ui.view">-->
+<!--            <field name="name">account_payment_term_line_form_inherit_shehata_5RA</field>-->
+<!--            <field name="model">account.payment.term</field>-->
+<!--            <field name="inherit_id" ref="account.view_payment_term_form"/>-->
+<!--            <field name="arch" type="xml">-->
+
+<!--                <xpath expr="//field[@name='line_ids']" position="replace">-->
+
+<!--                    <field name="line_ids" force_save="True" />-->
+
+<!--                </xpath>-->
+
+<!--            </field>-->
+<!--         </record>-->
+
+
+    </data>
+</odoo>

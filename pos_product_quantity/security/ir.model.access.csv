@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pos_product_qty,pos_product_qty,model_pos_product_qty,,1,1,1,1
+
+

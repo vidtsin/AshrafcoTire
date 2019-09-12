@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ProductQuantity">
+         <div class='control-button'>
+            <i class='fa fa-building'/>
+             Product Quantity
+        </div>
+    </t>
+
+
+    <div t-name="QuantitiesPopup">
+        <div class="modal-dialog">
+<!--            popup-alert-->
+            <div class="popup popup-text">
+                <p class="title">Quantities Of The Product</p>
+                <div class="body" style="margin-top:0px;">
+                    <table id="myTable" class="my-bg">
+                        <thead>
+                            <tr>
+                                <th>Warehouse</th>
+                                <th>Available Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <hr size="5"> </hr>
+                    <div style="text-align:right;margin-right:90px;">Total:<span class="total-qty"
+                                                                                 style="text-align:center;margin-left:20px;"></span></div>
+                </div>
+                <div class="footer">
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</templates>
+

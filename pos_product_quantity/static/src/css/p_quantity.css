@@ -1,0 +1,28 @@
+.myClass{
+background-color: rgba(217 , 119  ,137, 0.7);
+}
+hr {
+width: 100%;
+height: 3px;
+margin-left: auto;
+margin-right: auto;
+background-color:#666;
+border: 0 none;
+}
+table {
+  border-collapse: collapse;
+  width:100%
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+.my-bg{
+background-color:rgba(120, 217, 199, 1);
+}
+.popup .body{
+   height:275px;
+   overflow:auto;
+}
+

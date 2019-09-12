@@ -1,0 +1,133 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_product_quantity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-02 16:56+0000\n"
+"PO-Revision-Date: 2019-04-02 18:59+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar_SY\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: pos_product_quantity
+#: model_terms:ir.ui.view,arch_db:pos_product_quantity.pos_product_quantity_pos_config_form
+msgid "Available Quantities"
+msgstr "الكميات المتاحة"
+
+#. module: pos_product_quantity
+#. openerp-web
+#: code:addons/pos_product_quantity/static/src/xml/p_quantity.xml:21
+#, python-format
+msgid "Available Quantity"
+msgstr "الكمية المتاحة"
+
+#. module: pos_product_quantity
+#. openerp-web
+#: code:addons/pos_product_quantity/static/src/xml/p_quantity.xml:30
+#, python-format
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_config__display_product_qty
+msgid "Display Product Quantity"
+msgstr "عرض الكمية المتاحة"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: pos_product_quantity
+#: model:ir.model.fields,field_description:pos_product_quantity.field_pos_product_qty__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: pos_product_quantity
+#. openerp-web
+#: code:addons/pos_product_quantity/static/src/js/p_quantity.js:41
+#: code:addons/pos_product_quantity/static/src/js/p_quantity.js:44
+#, python-format
+msgid "Please Select Product"
+msgstr "من فضلك حدد المنتج"
+
+#. module: pos_product_quantity
+#. openerp-web
+#: code:addons/pos_product_quantity/static/src/js/p_quantity.js:68
+#, python-format
+msgid "Please select the product !"
+msgstr "من فضلك حدد المنتج"
+
+#. module: pos_product_quantity
+#: model:ir.model,name:pos_product_quantity.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "إعدادات نقطة البيع"
+
+#. module: pos_product_quantity
+#: model:ir.model,name:pos_product_quantity.model_pos_product_qty
+msgid "Pos Product Qty"
+msgstr "عرض الكميات المتاحة"
+
+#. module: pos_product_quantity
+#. openerp-web
+#: code:addons/pos_product_quantity/static/src/xml/p_quantity.xml:6
+#, python-format
+msgid "Product Quantity"
+msgstr "الكميات المتاحة "
+
+#. module: pos_product_quantity
+#. openerp-web
+#: code:addons/pos_product_quantity/static/src/xml/p_quantity.xml:16
+#, python-format
+msgid "Quantities Of The Product"
+msgstr "جدول كميات المنتج"
+
+#. module: pos_product_quantity
+#: model_terms:ir.ui.view,arch_db:pos_product_quantity.pos_product_quantity_pos_config_form
+msgid "Show Product Available Quantities Button"
+msgstr "اظهار زر الكميات المتاحة في نقطة البيع"
+
+#. module: pos_product_quantity
+#. openerp-web
+#: code:addons/pos_product_quantity/static/src/xml/p_quantity.xml:20
+#, python-format
+msgid "Warehouse"
+msgstr "المخزن"

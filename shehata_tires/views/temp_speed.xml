@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+          <record id="view_form_temp_speed" model="ir.ui.view">
+            <field name="name">Temp Speed</field>
+            <field name="model">product.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                </form>
+            </field>
+          </record>
+
+         <record id="view_tree_temp_speed" model="ir.ui.view">
+            <field name="name">Temp Speed</field>
+            <field name="model">product.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                        <field name="name"/>
+                        <field name="code"/>
+
+                </tree>
+            </field>
+          </record>
+
+
+
+          <act_window id="action_temp_speed"
+                            name="Temporary"
+                            res_model="product.model"
+                            view_mode="tree,form"
+                            />
+                <!--Menu Item to open product template  in purchase control vendor bill-->
+          <menuitem id="menu_temp_speed"
+                          name="Temporary"
+                          action="action_temp_speed"
+                          parent="stock.menu_stock_root"
+                          sequence="200"
+                          />
+    </data>
+</odoo>

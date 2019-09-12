@@ -8,3 +8,6 @@ shehata_car_dimension_group,shehata_car_dimension_group,model_car_dimension,sheh
 shehata_gient_dimension_group,shehata_gient_dimension_group,model_gient_dimension,shehata_tires_group,1,1,1,1
 
 
+temporary_group,shehata_temp_group,model_product_model,shehata_temp_group,1,1,1,1
+
+

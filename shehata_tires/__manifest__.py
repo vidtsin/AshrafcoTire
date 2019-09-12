@@ -9,10 +9,12 @@
     'website': 'http://www.git-eg.com',
     'depends': ['base', 'stock','contacts'],
     'data': [
-
+        'security/temp.xml',
         'security/contact.xml',
         'security/ir.model.access.csv',
         'views/view.xml',
+        'views/temp_speed.xml',
+
 
     ],
     'demo': [],

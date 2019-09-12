@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="wizard_receive_view_pdf">
+            <field name="name">receive.cheque2.wizard</field>
+            <field name="model">receive.cheque2</field>
+            <field name="arch" type="xml">
+                <form string="Receive A Cheque">
+                    <header>
+                        <button name="receive_cheque" string="Receive Cheque" type="object" class="oe_highlight"/>
+                        <button name="action_clear" string="Clear" type="object" class="oe_highlight"/>
+                        or <button string="Cancel" class="oe_link" special="cancel" />
+                    </header>
+                    <sheet>
+                        <div>
+                            <label for="seq" string="Cheque Number:"/>
+                            <field name="seq" />
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="partner_id"/>
+                                <field name="partner_account_id" />
+                                <field name="bank_name" />
+                                <field name="amount"/>
+                            </group>
+                            <group>
+                                <field name="received_date"/>
+                                <field name="cheque_date"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="receive_cheque2_tree_view_pdf">
+            <field name="name">receive.cheque2.tree</field>
+            <field name="model">receive.cheque2</field>
+            <field name="arch" type="xml">
+                <tree string="Receive Cheques">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="bank_name"/>
+                    <field name="received_date"/>
+                    <field name="cheque_date"/>
+                    <field name="amount"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="increment_sequence" model="ir.sequence">
+            <field name="name">Sequence Incrementation</field>
+            <field name="code">seq_increment</field>
+            <field name="prefix">Chq </field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record model="ir.actions.act_window" id="launch_receive_cheque2">
+            <field name="name">Receive A Cheque</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">receive.cheque2</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create a Receive A Cheque
+              </p><p>
+                Create New Receive A Cheque.
+              </p>
+            </field>
+        </record>
+        <menuitem name="Receive A Cheque" id="menu_receive_cheq" parent="cheque_management.menu_receive_cheque" sequence="3"
+                  action="cheque_management.launch_receive_cheque2"/>
+
+    </data>
+</odoo>
